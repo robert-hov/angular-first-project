@@ -1,0 +1,10 @@
+<button mat-button [matMenuTriggerFor]="appMenu">
+  <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #appMenu="matMenu">
+  <a routerLink="/a" mat-menu-item>A</a>
+  <a mat-menu-item routerLink="/b">B</a>
+</mat-menu>
+<p>
+  Counter: {{counterService.counter$ | async}}
+</p>
